@@ -38,7 +38,8 @@ button {
   margin: 3px;
   border: none;
   cursor: pointer;
-  background-color: rgba(255, 151, 151, 0.176);
+  background-color: transparent;
+  border: 1px solid rgba(71, 9, 0, 0.47);
 }
 .startDay-button {
   border-radius: 8px;
@@ -53,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: #d4d4d4;
+  background-color: #e2d0d0;
 }
 
 /* App.css */
@@ -98,7 +99,7 @@ button:hover {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  grid-template-columns: repeat(3, 1fr); /* 2 cards per row */
   gap: 15px; /* Space between cards */
   padding: 10px;
 }
@@ -110,7 +111,7 @@ button:hover {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.227);
   min-height: 200px;
-  width: 450px;
+  width: 420px;
 }
 
 .card p {
@@ -125,5 +126,26 @@ button:hover {
 .action-buttons button {
   width: 70px;
   margin: 0;
-  background-color: rgba(255, 151, 151, 0.176);
+  background-color: transparent;
+  border: 1px solid rgba(71, 9, 0, 0.47);
+}
+
+.action-buttons button:hover {
+  background-color: #e2d0d0;
+}
+
+.contact-actions {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+.contact-button {
+  border: none;
 }
